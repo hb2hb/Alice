@@ -1,0 +1,11 @@
+# -----------------------------------
+# Folder structure for Alice project;
+# ===================================
+
+BASE_PATH="/opt/Alice"
+DB_PATH="${BASE_PATH}/db_pg"
+VENV_PATH="${BASE_PATH}/venv"
+APP_PATH="${BASE_PATH}/app"
+
+
+

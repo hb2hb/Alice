@@ -1,0 +1,10 @@
+create git repository:
+
+git config --global user.name "Henry"
+git config --global user.email hb2hb@yandex.ru
+git init
+
+to init project structure run:
+make -f ./Makefile4Alice init
+
+

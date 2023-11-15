@@ -1,0 +1,33 @@
+# ---------------------------
+# created by H.B. 2023/11/15
+# ===========================
+
+include vars
+
+.PHONY: default all init db images
+
+default:
+	@echo "Usage:"
+	@echo "1) Create folders structure:"
+	@echo "    make -f Makefile4Alice init"
+	@echo "2) Create db-docker and init DB:"
+	@echo "    make -f Makefile4Alice db"
+	@echo "2) Create dockers images with python, django and others:"
+	@echo "    make -f Makefile4Alice images"
+	@echo "---"
+	@echo "OR you can run all steps at ones:"
+	@echo "    make -f Makefile4Alice all"
+
+all:	init db images
+
+init:
+	@echo "init branch:"
+	@./init.sh
+
+db:
+	@echo "db branch:"
+
+images:
+	@echo "images branch:"
+
+
