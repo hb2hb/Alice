@@ -4,11 +4,11 @@
 
 include vars
 
-.PHONY: default all init db images
+.PHONY: default all init db images clear
 
 default:
 	@echo "Usage:"
-	@echo "1) Create folders structure:"
+	@echo "1) Create folders structure and copy config files:"
 	@echo "    make -f Makefile4Alice init"
 	@echo "2) Create db-docker and init DB:"
 	@echo "    make -f Makefile4Alice db"
@@ -26,8 +26,12 @@ init:
 
 db:
 	@echo "db branch:"
+	@./db.sh
 
 images:
 	@echo "images branch:"
 
+clear:
+	@echo "All Folders will clear!"
+	@sudo rm -d -r ${BASE_PATH}
 
