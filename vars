@@ -5,7 +5,7 @@
 # common vars:
 BASE_PATH="/opt/Alice"
 VENV_PATH="${BASE_PATH}/venv"
-APP_PATH="${BASE_PATH}/app"
+PRJ_PATH="${BASE_PATH}/prj"
 DOCKER_CFG_PATH="${BASE_PATH}/docker_cfg"
 
 # nginx area:
@@ -13,13 +13,14 @@ NGINX_CFG_PATH="${BASE_PATH}/nginx_cfg"
 NGING_IP="192.168.77.3"
 
 # data base realm:
-PG_DB_PATH="${BASE_PATH}/pg_db"
-PG_CFG_PATH="${BASE_PATH}/pg_cfg"
-PG_DB_NAME="alice_db"
-PG_USER="alice"
-PG_PSW="alice++"
-PG_CONT_NAME="cont_postgres"
-PG_IP="192.168.77.2"
+DB_TYPE="postgres"
+DB_PATH="${BASE_PATH}/db_data"
+DB_CFG_PATH="${BASE_PATH}/db_cfg"
+DB_NAME="alice_db"
+DB_USER="alice"
+DB_PSW="alice++"
+DB_CONT_NAME="cont_db"
+DB_IP="192.168.77.2"
 
 # django:
 DJANGO_CONT_NAME="cont_django"

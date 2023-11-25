@@ -4,7 +4,7 @@
 
 include vars
 
-.PHONY: default all init db images clear
+.PHONY: default all init initdb images testdb clear
 
 default:
 	@echo "Usage:"
@@ -18,18 +18,22 @@ default:
 	@echo "OR you can run all steps at ones:"
 	@echo "    make -f Makefile4Alice all"
 
-all:	init db images
+all:	init initdb images testdb
 
 init:
 	@echo "init branch:"
 	@./init.sh
 
-db:
+initdb:
 	@echo "db branch:"
-	@./db.sh
+	@./initdb.sh
 
 images:
 	@echo "images branch:"
+
+testdb:
+	@echo "test db branch:"
+	@./testdb.sh
 
 clear:
 	@echo "All Folders will clear!"
