@@ -1,7 +1,16 @@
 hint to use:
 make -f ./Makefile4Alice 
 
+what's done:
 to init project structure run:
 make -f ./Makefile4Alice init
 
+to init database:
+make -f ./Makefile4Alice initdb
+
+to test database:
+make -f ./Makefile4Alice testdb
+
+to clear project stucture and database:
+make -f ./Makefile4Alice clear
 
