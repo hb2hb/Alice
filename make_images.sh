@@ -7,7 +7,8 @@
 # copy config files
 # =========================================
 
-
 source ./vars
+
+sudo cp ./vars {DOCKER_CFG_PATH}
 
 
